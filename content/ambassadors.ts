@@ -5,17 +5,17 @@ export const ambassadors: Ambassador[] = [
 	{
 		name: 'Nicolás Bustelo',
 		role: 'Mendoza Ambassador',
-		photo: '/images/ambassadors/amb3.png',
+		photo: '/images/ambassadors/nicolas_bustelo.jpg',
 		links: {
-			x: 'https://x.com/nicobustelo__',
 			linkedin: 'https://www.linkedin.com/in/nicolas-bustelo/',
+			x: 'https://x.com/nicobustelo__',
 			//website: 'https://example.com/',
 		},
 	},
 	{
 		name: 'Matias Boldrini',
 		role: 'Mendoza Ambassador',
-		photo: '/images/ambassadors/amb2.png',
+		photo: '/images/ambassadors/matias_boldrini.jpg',
 		links: {
 			github: 'https://github.com/',
 			linkedin: 'https://linkedin.com/',

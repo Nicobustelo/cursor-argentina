@@ -19,8 +19,8 @@ export const events: CursorEvent[] = [
 		attendees: 34,
 		location: 'Tent CoWork | Mendoza, Argentina',
 		recapPath: '/recaps/meetup-mendoza-1',
-		thumbnail: '/images/events/cursor-event-01.jpg',
-		galleryImages: ['/images/events/cursor-event-02.jpg', '/images/events/cursor-event-04.jpg'],
+		thumbnail: '/images/events/mendoza-meetup1-15.jpg',
+		galleryImages: ['/images/events/mendoza-meetup1-1.jpg', '/images/events/mendoza-meetup1-9.jpg', '/images/events/mendoza-meetup1-13.jpg', '/images/events/mendoza-meetup1-6.jpg'],
 		status: 'past',
 	},
 	{
