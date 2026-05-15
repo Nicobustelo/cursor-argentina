@@ -15,8 +15,8 @@ const Footer: React.FC = () => {
 
 	return (
 		<motion.footer
-			initial={{ opacity: 0 }}
-			whileInView={{ opacity: 1 }}
+			initial={{ y: 16 }}
+			whileInView={{ y: 0 }}
 			viewport={{ once: true, margin: '-50px' }}
 			transition={{ duration: 0.5 }}
 			className="mt-24 pt-8 border-t border-cursor-border"

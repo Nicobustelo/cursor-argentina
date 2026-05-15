@@ -27,8 +27,8 @@ const UpcomingEvents: React.FC = () => {
 	return (
 		<motion.section
 			id="upcoming"
-			initial={{ opacity: 0, y: 20 }}
-			whileInView={{ opacity: 1, y: 0 }}
+			initial={{ y: 20 }}
+			whileInView={{ y: 0 }}
 			viewport={{ once: true, margin: '-50px' }}
 			transition={{ duration: 0.5 }}
 			className="mb-16 scroll-mt-20"
@@ -42,8 +42,8 @@ const UpcomingEvents: React.FC = () => {
 
 			{/* Featured first event */}
 			<motion.div
-				initial={{ opacity: 0, y: 10 }}
-				whileInView={{ opacity: 1, y: 0 }}
+				initial={{ y: 12 }}
+				whileInView={{ y: 0 }}
 				viewport={{ once: true, margin: '-50px' }}
 				transition={{ duration: 0.4 }}
 				className="relative overflow-hidden bg-cursor-surface border border-cursor-border border-l-2 border-l-cursor-accent-blue rounded-lg p-5 mb-6"
@@ -83,8 +83,8 @@ const UpcomingEvents: React.FC = () => {
 						return (
 							<motion.div
 								key={event.id}
-								initial={{ opacity: 0, y: 10 }}
-								whileInView={{ opacity: 1, y: 0 }}
+								initial={{ y: 12 }}
+								whileInView={{ y: 0 }}
 								viewport={{ once: true, margin: '-50px' }}
 								transition={{ duration: 0.4, delay: index * 0.08 }}
 								className="py-3 first:pt-0 last:pb-0"

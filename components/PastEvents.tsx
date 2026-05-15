@@ -14,8 +14,8 @@ const containerVariants = {
 };
 
 const itemVariants = {
-	hidden: { opacity: 0, y: 20 },
-	visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+	hidden: { y: 18 },
+	visible: { y: 0, transition: { duration: 0.4 } },
 };
 
 const PastEvents: React.FC = () => {
@@ -28,8 +28,8 @@ const PastEvents: React.FC = () => {
 	return (
 		<motion.section
 			id="recaps"
-			initial={{ opacity: 0, y: 20 }}
-			whileInView={{ opacity: 1, y: 0 }}
+			initial={{ y: 20 }}
+			whileInView={{ y: 0 }}
 			viewport={{ once: true, margin: '-50px' }}
 			transition={{ duration: 0.5 }}
 			className="mb-16 scroll-mt-20"

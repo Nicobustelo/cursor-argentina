@@ -41,8 +41,8 @@ const AmbassadorSection: React.FC = () => {
 
 	return (
 		<motion.section
-			initial={{ opacity: 0, y: 20 }}
-			whileInView={{ opacity: 1, y: 0 }}
+			initial={{ y: 20 }}
+			whileInView={{ y: 0 }}
 			viewport={{ once: true, margin: '-50px' }}
 			transition={{ duration: 0.5 }}
 			className="mb-16"
@@ -66,8 +66,8 @@ const AmbassadorSection: React.FC = () => {
 					return (
 						<motion.article
 							key={ambassador.name}
-							initial={{ opacity: 0, y: 10 }}
-							whileInView={{ opacity: 1, y: 0 }}
+							initial={{ y: 12 }}
+							whileInView={{ y: 0 }}
 							viewport={{ once: true, margin: '-50px' }}
 							transition={{ duration: 0.3, delay: index * 0.07 }}
 							className="bg-cursor-bg-dark border border-cursor-border rounded-md p-5 group hover:border-cursor-accent-purple/30 hover:shadow-[0_0_15px_rgba(184,168,200,0.08)] transition-all duration-300"

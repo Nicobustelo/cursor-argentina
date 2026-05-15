@@ -43,8 +43,8 @@ const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, embedded = false })
 					<motion.button
 						key={`${photo.src}-${index}`}
 						type="button"
-						initial={{ opacity: 0, scale: 0.98 }}
-						animate={{ opacity: 1, scale: 1 }}
+						initial={{ scale: 0.98 }}
+						animate={{ scale: 1 }}
 						transition={{ duration: 0.25, delay: Math.min(index * 0.02, 0.25) }}
 						className="relative aspect-square overflow-hidden rounded-lg border border-cursor-border bg-cursor-bg-dark text-left"
 						onClick={() => {
@@ -71,9 +71,9 @@ const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, embedded = false })
 						onClick={() => setIsFullscreen(false)}
 					>
 						<motion.div
-							initial={{ opacity: 0, scale: 0.98 }}
-							animate={{ opacity: 1, scale: 1 }}
-							exit={{ opacity: 0, scale: 0.98 }}
+							initial={{ scale: 0.98 }}
+							animate={{ scale: 1 }}
+							exit={{ scale: 0.98 }}
 							transition={{ duration: 0.2 }}
 							className="relative max-w-6xl w-full max-h-[90vh]"
 							onClick={(event) => event.stopPropagation()}
@@ -90,9 +90,9 @@ const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, embedded = false })
 								<AnimatePresence mode="wait">
 									<motion.div
 										key={currentIndex}
-										initial={{ opacity: 0, x: 40 }}
-										animate={{ opacity: 1, x: 0 }}
-										exit={{ opacity: 0, x: -40 }}
+										initial={{ x: 40 }}
+										animate={{ x: 0 }}
+										exit={{ x: -40 }}
 										transition={{ duration: 0.2 }}
 										className="relative w-full h-full"
 									>
@@ -138,8 +138,8 @@ const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, embedded = false })
 
 	return (
 		<motion.section
-			initial={{ opacity: 0, y: 20 }}
-			animate={{ opacity: 1, y: 0 }}
+			initial={{ y: 20 }}
+			animate={{ y: 0 }}
 			transition={{ duration: 0.5, delay: 0.1 }}
 			className="bg-[#1B1913] border border-cursor-border rounded-lg p-8 mb-8"
 		>

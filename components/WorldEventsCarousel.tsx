@@ -23,8 +23,8 @@ const WorldEventsCarousel: React.FC = () => {
 				{photos.map((photo, index) => (
 					<motion.div
 						key={index}
-						initial={{ opacity: 0, scale: 0.9 }}
-						animate={{ opacity: 1, scale: 1 }}
+						initial={{ scale: 0.96 }}
+						animate={{ scale: 1 }}
 						transition={{ duration: 0.3, delay: index * 0.05 }}
 						className="relative aspect-square cursor-pointer group overflow-hidden rounded-lg border border-cursor-border"
 						onClick={() => {
@@ -56,9 +56,9 @@ const WorldEventsCarousel: React.FC = () => {
 						onClick={() => setIsFullscreen(false)}
 					>
 						<motion.div
-							initial={{ opacity: 0, scale: 0.95 }}
-							animate={{ opacity: 1, scale: 1 }}
-							exit={{ opacity: 0, scale: 0.95 }}
+							initial={{ scale: 0.97 }}
+							animate={{ scale: 1 }}
+							exit={{ scale: 0.97 }}
 							className="relative max-w-6xl w-full max-h-[90vh]"
 							onClick={(event) => event.stopPropagation()}
 						>
@@ -74,9 +74,9 @@ const WorldEventsCarousel: React.FC = () => {
 								<AnimatePresence mode="wait">
 									<motion.div
 										key={currentIndex}
-										initial={{ opacity: 0, x: 100 }}
-										animate={{ opacity: 1, x: 0 }}
-										exit={{ opacity: 0, x: -100 }}
+										initial={{ x: 100 }}
+										animate={{ x: 0 }}
+										exit={{ x: -100 }}
 										transition={{ duration: 0.3 }}
 										className="relative w-full h-full"
 									>
