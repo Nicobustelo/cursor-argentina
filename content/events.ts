@@ -3,22 +3,34 @@ import { CursorEvent } from '@/lib/types';
 // REPLACE: Replace all sample events, locations, and Luma URLs with real community events.
 export const events: CursorEvent[] = [
 	{
-		id: 'cafe-cursor-example-1',
-		title: 'Cafe Cursor YourCity',
-		date: '2026-03-21',
-		displayDate: 'March 21, 2026',
-		location: 'Your City, Your Country',
-		lumaUrl: 'https://lu.ma/example-event-1',
+		id: 'cursor-meetup-mendoza-3',
+		title: 'Cursor Meetup Mendoza #3',
+		date: '2026-05-21', // TODO: cambiar por la fecha real si es otra
+		displayDate: 'May 21, 2026',
+		location: 'Campus Olegario | Mendoza, Argentina', // TODO: cambiar por venue exacto
+		lumaUrl: 'https://luma.com/bwst0qek',
 		status: 'upcoming',
 	},
 	{
-		id: 'cursor-seminar-yourcity',
-		title: 'Cursor Seminar YourCity',
-		date: '2026-02-14',
-		displayDate: 'February 14, 2026',
-		attendees: 38,
-		location: 'Your City, Your Country',
-		recapPath: '/recaps/example-event',
+		id: 'cursor-meetup-mendoza-1',
+		title: 'Cursor Meetup Mendoza #1',
+		date: '2025-12-01', // TODO: cambiar por la fecha exacta
+		displayDate: 'December 2025', // TODO: cambiar por la fecha exacta
+		attendees: 34,
+		location: 'Tent CoWork | Mendoza, Argentina',
+		recapPath: '/recaps/meetup-mendoza-1',
+		thumbnail: '/images/events/cursor-event-01.jpg',
+		galleryImages: ['/images/events/cursor-event-02.jpg', '/images/events/cursor-event-04.jpg'],
+		status: 'past',
+	},
+	{
+		id: 'cursor-meetup-mendoza-2',
+		title: 'Cursor Meetup Mendoza #2',
+		date: '2025-12-01', // TODO: cambiar por la fecha exacta
+		displayDate: 'December 2025', // TODO: cambiar por la fecha exacta
+		attendees: 34,
+		location: 'Polo TIC | Mendoza, Argentina',
+		recapPath: '/recaps/meetup-mendoza-2',
 		thumbnail: '/images/events/cursor-event-01.jpg',
 		galleryImages: ['/images/events/cursor-event-02.jpg', '/images/events/cursor-event-04.jpg'],
 		status: 'past',
